@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@500;900&display=swap');
+:root{ 
+    --roboto: "Roboto", sans-serif; 
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex{ 
+    display: flex;
+}
+.container{ 
+    width: 1170px;
+    margin: 0 auto;
+    outline: 1px solid red;  
+    padding: 0 30px;
+}
+a{ 
+    text-decoration: none;
+    color: inherit;
+}
+ul{ 
+    list-style-type: none;
+}
+
+.header{ 
+    background: #fff;
+}
+.nav-bar{ 
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar-lists{ 
+    justify-content: space-between;
+    gap: 318px;
+}
+.list-contacts, .list-pages{ 
+    gap: 50px;
+}
+.list-pages-item, .list-contacts-item{ 
+    color: rgb(33, 33, 33);
+    font-family: var(--roboto);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 2%;
+    text-align: left;
+}
+.list-contacts-item:hover, .list-pages-item:hover{ 
+    color: rgb(33, 150, 243);
+    cursor: pointer;
+}
+.mail-before{ 
+    
+}
