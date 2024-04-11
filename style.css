@@ -817,9 +817,10 @@ main {
     transform: translate(-3px, -4px);
 }
 
-.card-list-item{ 
+.card-list-item {
     position: relative;
 }
+
 .owerlay {
     position: absolute;
     width: 370px;
@@ -828,9 +829,9 @@ main {
     right: 0;
     top: 0;
     background: rgba(33, 150, 243, 0.9);
-    
-  transform: translatey(100%);
-  transition: transform 250ms ease-in-out;
+
+    transform: translatey(100%);
+    transition: transform 250ms ease-in-out;
 }
 
 .hidden-text {
@@ -844,12 +845,51 @@ main {
     letter-spacing: 3%;
     text-align: left;
 }
-.card-list-item:hover .owerlay { 
+
+.card-list-item:hover .owerlay {
     transform: translateY(0);
 }
-.card-list-item:not(:hover) .owerlay{ 
+
+.card-list-item:not(:hover) .owerlay {
     opacity: -1;
     transition: 250ms ease-in-out;
 }
 
+/* 
+.list-pages-item,
+.list-contacts-item,
+.main-button,
+.list-social-networks li,
+.buttons-list-item button,
+.what-we-do-list-item,
+.card-list-item,
+.footer-btn {
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.list-pages-item:hover,
+.list-contacts-item:hover,
+.list-social-networks li:hover,
+.buttons-list-item button:hover,
+.what-we-do-list-item:hover,
+.card-list-item:hover,
+.footer-btn:hover {
+    color: inherit;
+    background-color: inherit;
+    box-shadow: inherit;
+}
+
+.list-pages-item:focus,
+.list-contacts-item:focus,
+.main-button:focus,
+.list-social-networks li:focus,
+.buttons-list-item button:focus,
+.what-we-do-list-item:focus,
+.card-list-item:focus,
+.footer-btn:focus {
+    color: inherit;
+    background-color: inherit;
+    box-shadow: inherit;
+} */
