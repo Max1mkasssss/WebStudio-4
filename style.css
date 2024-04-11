@@ -755,7 +755,7 @@ main {
     transition-delay: 100ms; */
 }
 
-.footer-btn{
+.footer-btn {
     animation: animation 3000ms infinite alternate backwards ease-in-out 1000ms;
 }
 
@@ -790,24 +790,66 @@ main {
     0% {
         transform: translateX(5px);
     }
+
     100% {
         transform: translateX(-5px);
     }
 }
-.tg{ 
+
+.tg {
     transition-property: all;
     transition-delay: 400ms;
     transition-duration: 1000ms;
 }
-.footer-btn:hover .tg{ 
+
+.footer-btn:hover .tg {
     transform: rotate(360deg);
 }
-.card-list-item{ 
+
+.card-list-item {
     transition-duration: 500ms;
     transition-property: all;
     transition-timing-function: ease-in-out;
     transition-delay: 100ms;
 }
-.card-list-item:hover{ 
+
+.card-list-item:hover {
     transform: translate(-3px, -4px);
-}  
+}
+
+.card-list-item{ 
+    position: relative;
+}
+.owerlay {
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(33, 150, 243, 0.9);
+    
+  transform: translatey(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.hidden-text {
+    padding: 0;
+    margin: 63px 24px;
+    color: rgb(255, 255, 255);
+    font-family: var(--roboto);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 3%;
+    text-align: left;
+}
+.card-list-item:hover .owerlay { 
+    transform: translateY(0);
+}
+.card-list-item:not(:hover) .owerlay{ 
+    opacity: -1;
+    transition: 250ms ease-in-out;
+}
+
+
